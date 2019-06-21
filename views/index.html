@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <title>Node Js ile Sms Gonderme</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sms Gönder</h2>
+        <input type="tel" name="number" id="number" placeholder="Telefon Numarasını Giriniz">
+        <input type="text" name="msg" id="msg" placeholder="Mesajınızı Giriniz...">
+        <select name="schedule" id="schedule">
+            <option value="0">Mesaj göndermek için zaman seçin</option>
+            <option value="1">1 Dakika Sonra</option>
+            <option value="3">3 Dakika Sonra</option>
+            <option value="5">5 Dakika Sonra </option>
+        </select>
+        <input type="button" id="button" value="Gönder" class="button button-primary">
+        <p class="response"></p>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
